@@ -1,0 +1,34 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://yoursite.com
+title: Brendan Maione-Downing
+email: b.maionedowning@gmail.com
+author: Brendan Maione-Downing
+description: > # "I am Brendan. This is my blog."
+favicon: favicon.png
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: twitter
+    url: https://twitter.com/bmaionedowning
+  - title: github
+    url: https://github.com/bmd
+  - title: linkedin
+    url: https://linkedin.com/in/brendanmd
+  - title: instagram
+    url: https://instagram.com/somethingsomethingbmd/
+  - title: flickr
+    url: https://www.flickr.com/photos/96304891@N07/
