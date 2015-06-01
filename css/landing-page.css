@@ -23,12 +23,17 @@ h6 {
 
 .lead {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 100;
+}
+
+.lead a {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     text-align: center;
     color: #f8f8f8;
     background: url(../img/intro-bg.jpg) no-repeat center center;
@@ -263,7 +268,7 @@ p.copyright {
   border-radius: 60px;
   border: solid 2px white;
   position: relative;
-  bottom: 50px;
+  bottom: 100px;
   opacity: 0.75;
   left: 50%;
 }
