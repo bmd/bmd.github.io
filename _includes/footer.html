@@ -1,30 +1,86 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <ul class="list-inline">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">Me</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#services">Projects</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Get In Touch</a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted small">Copyright &copy; {{ site.title }} All Rights Reserved</p>
-            </div>
-            <div class="col-md-4">
-                Credits: Built with Jekyll using the Landing Page framework and Bootstrap. I took these pictures.
-            </div>
-        </div>
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="site-navigation">
+      
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        {% for page in site.pages %}
+        {% if page.title and page.main_nav != false %}
+          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+        {% endfor %}
+      </ul>
     </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:{{ site.email }}">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">{{ site.email }}</span>
+          </a>
+        </li>
+
+        {% for social in site.social %}
+          {% if social.url != null %}
+          <li>
+            <a href="{{ social.url }}" title="{{ social.desc }}">
+              <i class="fa fa-{{ social.icon }}"></i>
+              <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
+      <p class="text">Copyright {{ site.time | date: '%Y' }} Brendan Maione-Downing</p>
+    </div>
+
+  </div>
+
 </footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+  // Syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+
+
+});
+
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PMQLRW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PMQLRW');</script>
