@@ -46,7 +46,8 @@ jekyll-archives:
 descriptions:
   - cat: code
     desc: "Personal projects, as well as articles and resources I've found useful"
-
+  - cat: projects
+    desc: "I built these things"
   - cat: datascience
     desc: "Advanced statistical methods, programming, and other quote-unquote-data-science topics"
 
