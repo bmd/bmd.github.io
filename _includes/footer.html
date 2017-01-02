@@ -1,86 +1,37 @@
-<footer class="site-footer">
+<!-- Documents about icons are here: http://fontawesome.io/icons/ -->
+<div class="footer">
+	<hr />
+	<div class="footer-link">
+		{% if site.author.facebook %}
+		<a href="https://www.facebook.com/{{ site.author.facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		{% endif %}
 
-  <div class="wrapper">
+		{% if site.author.twitter %}
+		<a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		{% endif %}
 
-    <div class="site-navigation">
-      
-      <p><strong>Site Map</strong></p>
-      <ul class="pages">
-        {% for page in site.pages %}
-        {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+		{% if site.author.github %}
+		<a href="https://github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
+		{% endif %}
 
-    <div class="site-contact">
+		{% if site.author.linkedin %}
+		<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		{% endif %}
 
-      <p><strong>Contact</strong></p>
-      <ul class="social-media-list">
-        <li>
-          <a href="mailto:{{ site.email }}">
-            <i class="fa fa-envelope-o"></i>
-            <span class="username">{{ site.email }}</span>
-          </a>
-        </li>
+		{% if site.author.medium %}
+		<a href="https://medium.com/@{{ site.author.medium }}"><i class="fa fa-medium" aria-hidden="true"></i></a>
+		{% endif %}
 
-        {% for social in site.social %}
-          {% if social.url != null %}
-          <li>
-            <a href="{{ social.url }}" title="{{ social.desc }}">
-              <i class="fa fa-{{ social.icon }}"></i>
-              <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
-            </a>
-          </li>
-          {% endif %}
-        {% endfor %}
+		{% if site.author.tumblr %}
+		<a href="https://{{ site.author.tumblr }}.tumblr.com"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+		{% endif %}
 
-      </ul>
-    </div>
+		{% if site.author.email %}
+		<a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+		{% endif %}
 
-    <div class="site-signature">
-      <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
-      <p class="text">Copyright {{ site.time | date: '%Y' }} Brendan Maione-Downing</p>
-    </div>
-
-  </div>
-
-</footer>
-
-<!-- Scripts -->
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
-<script>
-
-$(document).ready(function() {
-
-  // Syntax highlighting
-  hljs.initHighlightingOnLoad();
-
-  // Header
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
-    });
-  });
-
-
-});
-
-</script>
-
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PMQLRW"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PMQLRW');</script>
+	</div>
+	© {{ site.time | date: "%Y" }} {{ site.author.name }}. All rights reserved.
+</br>
+  <a href=https://aweekj.github.io/Kiko-plus>Based on Kiko Plus theme</a> by AWEEKJ
+</div>
