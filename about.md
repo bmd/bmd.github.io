@@ -15,7 +15,7 @@ If you'd like a pretty, typeset version of my resume, you can
 ----------
 
 ###### Blue State Digital, Boston MA
-##### Associate Software Architect (July 2016 - present)
+###### Associate Software Architect (July 2016 - present)
 I work with executives, product stakeholders, and software engineers to design,
 build, and deliver complex, data-driven software on time and within budget,
 using a wide range of tools and technologies. I leverage my expertise in **ReST
@@ -28,7 +28,7 @@ Recognition: BSD Internal Hackathon, Innovation Award winner (3x) and Overall
 Award winner (2x); BSD Employee Awesomeness Award (2015)
 
 ###### Blue State Digital, _Boston, MA_
-##### Analytics Architect (May 2014 - July 2016)
+###### Analytics Architect (May 2014 - July 2016)
 I re-defined and expanded a multifaceted role that encompassed web analytics,
 data science, software engineering, and database management. As the advanced
 analytics practice lead, I architected fundraising and engagement projections
@@ -42,7 +42,7 @@ all legacy custom reporting solutions into a single system, delivering over
 100 reports daily and 4B rows of data annually with a 99.99% fulfillment rate.
 
 ###### Prima Health Analytics, _Boston, MA_
-##### Research Associate (May 2013 - May 2014)
+###### Research Associate (May 2013 - May 2014)
 I developed and supported statistical, financial, and geospatial models for
 clients in the renal dialysis industry using R, Python, and ArcGIS. My analysis
 was featured at industry conferences on behalf of clients including Amgen and
@@ -51,7 +51,7 @@ on software that automated comparison of cost and outcome metrics to national
 and competitor averages.
 
 ###### Digital Atlas of Roman and Medieval Civilizations, _Cambridge, MA_
-##### Managing Editor (Jan 2010 - May 2013)
+###### Managing Editor (Jan 2010 - May 2013)
 I managed project timelines, prioritized work, and supervised an international
 team of between 5 and 15 undergraduate and graduate contributors, serving as a
 main point of contact to faculty and university leadership. I also conducted
@@ -77,4 +77,4 @@ and **ArcPy**.
 
 ### Education
 ----------
-##### B.A. in History, _Harvard University, Cambridge, MA_ (May 2013)
+B.A. in History, _Harvard University, Cambridge, MA_ (May 2013)
