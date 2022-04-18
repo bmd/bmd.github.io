@@ -116,11 +116,13 @@ export const Home = () => {
         <SectionHeader>Todo List</SectionHeader>
         <Text>
           <ul>
-            <li>🥚 Add easter egg </li>
             <li>
               <Strikethrough>🖱️ Fix cursor</Strikethrough>
             </li>
+            <li>🥚 Add easter egg </li>
+            <li>✏️ Come up with better content</li>
             <li>🌚 Dark mode!</li>
+            <li>📄 Add resume</li>
           </ul>
         </Text>
       </section>
