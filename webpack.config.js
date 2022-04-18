@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CnameWebpackPlugin = require('cname-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 const settings = require('./settings');
 
 const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development';
@@ -127,6 +129,11 @@ module.exports = {
           </html>
         `
       },
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+          { from: 'src/assets', to: 'assets' }
+      ]
     }),
     ...(mode !== 'production'
       ? [new webpack.HotModuleReplacementPlugin()]

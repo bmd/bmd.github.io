@@ -82,7 +82,7 @@ export const Home = () => {
         <Text>
           I'm a <HighlightText color={yellow}>software engineer</HighlightText>,{" "}
           <HighlightText color={yellow}>leader</HighlightText>, and{" "}
-          <HighlightText color={yellow}>dad</HighlightText> based in Boston, MA.
+          <HighlightText color={yellow}>dad</HighlightText> in Boston, MA.
         </Text>
         <Text>
           I'm currently Director of Product Engineering at{" "}
@@ -96,30 +96,19 @@ export const Home = () => {
         <Text>
           If you're looking for more information about my work, here is my{" "}
           <HighlightLink href="https://www.linkedin.com/in/brendanmd/">
-            LinkedIn
+            LinkedIn profile
+          </HighlightLink>{" "}
+          and my{" "}
+          <HighlightLink target="_blank" href="/assets/resume.pdf">
+            resume
           </HighlightLink>
-          and my <HighlightLink href="/assets/resume.pdf">resume</HighlightLink>
           .
         </Text>
         <Text>
           My Github is{" "}
           <HighlightLink href="https://github.com/bmd/">@bmd</HighlightLink>,
-          but I don't write much code outside of work these days. Having a
-          toddler will do that to you.
-        </Text>
-      </section>
-      <section>
-        <SectionHeader>Todo List</SectionHeader>
-        <Text>
-          <ul>
-            <li>
-              <Strikethrough>🖱️ Fix cursor</Strikethrough>
-            </li>
-            <li>✏️ Come up with better content</li>
-            <li>📄 Add resume</li>
-            <li>🥚 Add easter egg </li>
-            <li>🌚 Dark mode!</li>
-          </ul>
+          but with a toddler running around, I don't write much code outside of
+          work these days.
         </Text>
       </section>
       <section>
