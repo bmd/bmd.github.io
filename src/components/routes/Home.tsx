@@ -73,7 +73,7 @@ const Strikethrough = styled.span`
 `;
 
 export const Home = () => {
-  const { yellow, blue } = useTheme().colors;
+  const { yellow } = useTheme().colors;
 
   return (
     <main>
@@ -95,11 +95,7 @@ export const Home = () => {
         </Text>
         <Text>
           If you're looking for more information about my work, here is my{" "}
-          <HighlightLink
-            color={blue}
-            target="_blank"
-            href="https://www.linkedin.com/in/brendanmd/"
-          >
+          <HighlightLink href="https://www.linkedin.com/in/brendanmd/">
             LinkedIn
           </HighlightLink>
           and my <HighlightLink href="/assets/resume.pdf">resume</HighlightLink>
@@ -119,10 +115,10 @@ export const Home = () => {
             <li>
               <Strikethrough>🖱️ Fix cursor</Strikethrough>
             </li>
-            <li>🥚 Add easter egg </li>
             <li>✏️ Come up with better content</li>
-            <li>🌚 Dark mode!</li>
             <li>📄 Add resume</li>
+            <li>🥚 Add easter egg </li>
+            <li>🌚 Dark mode!</li>
           </ul>
         </Text>
       </section>
