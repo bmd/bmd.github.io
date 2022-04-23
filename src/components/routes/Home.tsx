@@ -1,78 +1,21 @@
-import React from "react";
-import styled, { useTheme } from "styled-components";
+import React, { useState } from "react";
+import { useTheme } from "styled-components";
+import DarkModeToggle from "react-dark-mode-toggle";
 
-const SectionHeader = styled.h1`
-  line-height: 1.2;
-  color: ${({ color, theme }) => color || theme.colors.base02};
-  &:before {
-    content: "${({ prefix }) => prefix || "# "} ";
-    color: ${({ theme }) => theme.colors.base0};
-  }
-`;
+import {
+  Blink,
+  HighlightLink,
+  HighlightText,
+  SectionHeader,
+  Text,
+} from "../typography";
+import { RouteComponentProps } from "react-router-dom";
 
-const HighlightText = styled.span`
-  color: ${({ color, theme }) => color || theme.colors.base00};
-  background-color: ${({ backgroundColor, theme }) =>
-    backgroundColor || theme.colors.base2};
-  padding: 0 0.25rem 0 0.25rem;
-`;
+interface IHomePageProps {
+  setDarkMode: any;
+}
 
-const Text = styled.p`
-  color: ${({ theme }) => theme.colors.base00};
-  font-weight: 600;
-`;
-
-const HighlightLink = styled.a`
-  color: ${(props) => props.color || props.theme.colors.orange};
-  background-color: ${(props) =>
-    props.backgroundColor || props.theme.colors.base2};
-  padding: 0 0.25rem 0 0.25rem;
-  text-decoration: none;
-  &:visited {
-    color: ${({ theme }) => theme.colors.orange};
-    text-decoration: none;
-  }
-  &:hover {
-    color: ${({ theme }) => theme.colors.red};
-    text-decoration: overline;
-  }
-`;
-
-const Blink = styled.span`
-  color: #a8a7a7;
-  -webkit-animation: blink 1.25s step-end infinite;
-  animation: blink 1.25s step-end infinite;
-
-  @-webkit-keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-`;
-
-const Strikethrough = styled.span`
-  text-decoration: line-through;
-`;
-
-export const Home = () => {
+export const Home = (props: RouteComponentProps<{}> & IHomePageProps) => {
   const { yellow } = useTheme().colors;
 
   return (
@@ -96,9 +39,9 @@ export const Home = () => {
         <Text>
           If you're looking for more information about my work, here is my{" "}
           <HighlightLink href="https://www.linkedin.com/in/brendanmd/">
-            LinkedIn profile
+            LinkedIn
           </HighlightLink>{" "}
-          and my{" "}
+          profile and my{" "}
           <HighlightLink target="_blank" href="/assets/resume.pdf">
             resume
           </HighlightLink>
@@ -119,6 +62,3 @@ export const Home = () => {
     </main>
   );
 };
-
-Home.exact = true;
-Home.route = "/";
