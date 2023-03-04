@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useTheme } from "styled-components";
-import DarkModeToggle from "react-dark-mode-toggle";
 
 import {
   Blink,
@@ -28,30 +27,30 @@ export const Home = (props: RouteComponentProps<{}> & IHomePageProps) => {
           <HighlightText color={yellow}>dad</HighlightText> in Boston, MA.
         </Text>
         <Text>
-          I'm currently Director of Product Engineering at{" "}
-          <HighlightLink href="https://logrocket.com">LogRocket</HighlightLink>.
-          I also co-host LogRocket's engineering podcast,{" "}
+          I'm currently an engineering manager at{" "}
+          <HighlightLink href="https://www.zillowhomeloans.com/">Zillow</HighlightLink>
+          , building software to improve the consumer mortgage experience.
+        </Text>
+        <Text>
+          Previously, I was a director of engineering at{" "}
+          <HighlightLink href="https://logrocket.com">LogRocket</HighlightLink> and {" "}
+          <HighlightLink href="https://bluestate.co">Blue State Digital</HighlightLink>.{" "}
+          I also co-hosted LogRocket's engineering podcast,{" "}
           <HighlightLink href="https://podrocket.logrocket.com/hosts/brendan-downing">
             PodRocket
           </HighlightLink>
           .
         </Text>
         <Text>
-          If you're looking for more information about my work, here is my{" "}
+          If you'd like more information on my work, you can find me on{" "}
           <HighlightLink href="https://www.linkedin.com/in/brendanmd/">
             LinkedIn
-          </HighlightLink>{" "}
-          profile and my{" "}
-          <HighlightLink target="_blank" href="/assets/resume.pdf">
-            resume
-          </HighlightLink>
-          .
+          </HighlightLink>, and my Github is {" "}
+          <HighlightLink href="https://github.com/bmd/">@bmd</HighlightLink>.
         </Text>
         <Text>
-          My Github is{" "}
-          <HighlightLink href="https://github.com/bmd/">@bmd</HighlightLink>,
-          but with a toddler running around, I don't write much code outside of
-          work these days.
+          When I'm not writing code, you'll usually find me hanging out with my 2-year-old daughter,
+          or perfecting 
         </Text>
       </section>
       <section>

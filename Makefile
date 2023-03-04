@@ -11,3 +11,6 @@ deploy: build
 
 lint:
 	npm run prettier
+
+install:
+	yarn install
