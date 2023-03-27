@@ -6,8 +6,8 @@ run:
 build:
 	npm run build
 
-deploy: build
-	./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress
+deploy:
+	npm run deploy
 
 lint:
 	npm run prettier
