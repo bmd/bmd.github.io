@@ -7,7 +7,7 @@ build:
 	npm run build
 
 deploy: build
-	cross-env NODE_ENV=production webpack --progress
+	./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress
 
 lint:
 	npm run prettier
